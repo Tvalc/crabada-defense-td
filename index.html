@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Project</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Basic Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            border: 2px solid #fff;
+            background: #000;
+        }
+    </style>
 </head>
 <body>
-    <div id="game-container">
-        <h1>Welcome to Your Game!</h1>
-        <p>This is your game project created with Snib AI Studio.</p>
-        <button id="start-game">Start Game</button>
-    </div>
-    <script src="script.js"></script>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script src="game.js"></script>
 </body>
 </html>
